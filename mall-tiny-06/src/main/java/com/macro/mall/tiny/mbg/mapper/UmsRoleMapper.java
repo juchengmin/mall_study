@@ -2,9 +2,12 @@ package com.macro.mall.tiny.mbg.mapper;
 
 import com.macro.mall.tiny.mbg.model.UmsRole;
 import com.macro.mall.tiny.mbg.model.UmsRoleExample;
-import java.util.List;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
+import java.util.List;
+
+@Mapper
 public interface UmsRoleMapper {
     int countByExample(UmsRoleExample example);
 
